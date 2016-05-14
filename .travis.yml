@@ -12,6 +12,8 @@ install:
   - npm install -g bower
   - npm install
   - bower install
+script:
+  - npm run build
 after_success:
 - >-
   test $TRAVIS_TAG &&
