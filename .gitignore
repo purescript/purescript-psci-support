@@ -1,7 +1,8 @@
-npm-debug.log
+/.*
+!/.gitignore
+!/.jscsrc
+!/.jshintrc
+!/.travis.yml
 /bower_components/
 /node_modules/
-/.pulp-cache/
 /output/
-/.psci*
-/src/.webpack.js
