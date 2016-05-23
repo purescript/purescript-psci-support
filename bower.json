@@ -16,6 +16,6 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-console": "^1.0.0"
+    "purescript-console": "^1.0.0-rc.1"
   }
 }
