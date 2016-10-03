@@ -7,11 +7,11 @@ import Prelude
 
 import Control.Monad.Eff (Eff)
 import Control.Monad.Eff.Console (CONSOLE, logShow)
-import Control.Monad.Eff.Unsafe (unsafeInterleaveEff)
+import Control.Monad.Eff.Unsafe (unsafeCoerceEff)
 
 -- | The `Eval` class captures those types which can be
 -- | evaluated in the REPL.
--- | 
+-- |
 -- | There are (possibly overlapping) instances provided for
 -- | the `Eff` type constructor and any `Show`able types.
 class Eval a where
@@ -22,5 +22,5 @@ instance evalShow :: Show a => Eval a where
 
 instance evalEff :: Eval a => Eval (Eff eff a) where
   eval x = do
-    a <- unsafeInterleaveEff x
+    a <- unsafeCoerceEff x
     eval a
