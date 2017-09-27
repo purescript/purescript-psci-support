@@ -17,10 +17,11 @@ import Control.Monad.Eff.Unsafe (unsafeCoerceEff)
 class Eval a where
   eval :: a -> Eff (console :: CONSOLE) Unit
 
-instance evalShow :: Show a => Eval a where
-  eval = logShow
-
 instance evalEff :: Eval a => Eval (Eff eff a) where
   eval x = do
     a <- unsafeCoerceEff x
     eval a
+else
+instance evalShow :: Show a => Eval a where
+  eval = logShow
+
