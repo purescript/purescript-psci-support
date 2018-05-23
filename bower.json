@@ -2,7 +2,7 @@
   "name": "purescript-psci-support",
   "homepage": "https://github.com/purescript/purescript-psci-support",
   "description": "Support module for the PSCI interactive mode",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
     "url": "git://github.com/purescript/purescript-psci-support.git"
@@ -16,6 +16,8 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-console": "purescript/purescript-console#compiler/0.12"
+    "purescript-console": "^4.0.0",
+    "purescript-effect": "^2.0.0",
+    "purescript-prelude": "^4.0.0"
   }
 }
