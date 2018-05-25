@@ -18,7 +18,7 @@ class Eval a where
 
 instance evalEffect :: Eval a => Eval (Effect a) where
   eval x = x >>= eval
-else
+
 instance evalShow :: Show a => Eval a where
   eval = logShow
 
