@@ -3,10 +3,13 @@
 
 module PSCI.Support where
 
-import Prelude
+import Prelude (class Show, Unit, bind, void, ($), (>>=))
 
 import Effect (Effect)
 import Effect.Console (logShow)
+import Effect.Exception (throwException)
+import Effect.Aff (Aff, Fiber(..), launchAff)
+import Data.Either (Either(..))
 
 -- | The `Eval` class captures those types which can be
 -- | evaluated in the REPL.
@@ -16,6 +19,15 @@ import Effect.Console (logShow)
 class Eval a where
   eval :: a -> Effect Unit
 
+instance evalAff :: Eval a => Eval (Aff a) where
+  eval aff = do
+    Fiber fiberRec <- launchAff aff
+    void $ fiberRec.join
+      (case _ of
+        Left err -> throwException err
+        Right a -> eval a
+      )
+else
 instance evalEffect :: Eval a => Eval (Effect a) where
   eval x = x >>= eval
 else
