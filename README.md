@@ -1,14 +1,14 @@
 # purescript-psci-support
 
 [![Latest release](http://img.shields.io/github/release/purescript/purescript-psci-support.svg)](https://github.com/purescript/purescript-psci-support/releases)
-[![Build status](https://travis-ci.org/purescript/purescript-psci-support.svg?branch=master)](https://travis-ci.org/purescript/purescript-psci-support)
+[![Build status](https://github.com/purescript/purescript-psci-support/workflows/CI/badge.svg?branch=master)](https://github.com/purescript/purescript-psci-support/actions?query=workflow%3ACI+branch%3Amaster)
 
 Support module for the PSCI interactive mode. This package is required for correct operation of PSCI as of version 0.9.0.
 
 ## Installation
 
 ```
-bower install purescript-psci-support
+spago install purescript-psci-support
 ```
 
 ## Documentation
