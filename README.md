@@ -8,7 +8,7 @@ Support module for the PSCI interactive mode. This package is required for corre
 ## Installation
 
 ```
-spago install purescript-psci-support
+spago install psci-support
 ```
 
 ## Documentation
