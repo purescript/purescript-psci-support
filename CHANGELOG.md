@@ -5,16 +5,20 @@ Notable changes to this project are documented in this file. The format is based
 ## [Unreleased]
 
 Breaking changes:
+- Added support for PureScript 0.14 and dropped support for all previous versions (#20)
 
 New features:
+- Add instance for `Eval (Effect Unit)` to avoid printing `unit` after running an `Effect Unit` in the repl (#15)
 
 Bugfixes:
 
 Other improvements:
+- Migrated CI to GitHub Actions and updated installation instructions to use Spago (#21)
+- Added a changelog and pull request template (#22, #23)
 
 ## [v4.0.0](https://github.com/purescript/purescript-psci-support/releases/tag/v4.0.0) - 2018-05-23
 
-Updated for PureScript 0.12
+- Updated for PureScript 0.12
 
 ## [v3.0.0](https://github.com/purescript/purescript-psci-support/releases/tag/v3.0.0) - 2017-03-26
 
@@ -26,15 +30,7 @@ Updated for PureScript 0.12
 
 ## [v1.0.0](https://github.com/purescript/purescript-psci-support/releases/tag/v1.0.0) - 2016-06-01
 
-This release is intended for the PureScript 0.9.1 compiler and newer.
+This release is intended for the PureScript 0.9.1 compiler and newer. **Note**: The v1.0.0 tag is not meant to indicate the library is “finished”, the core libraries are all being bumped to this for the 0.9 compiler release so as to use semver more correctly.
 
-**Note**: The v1.0.0 tag is not meant to indicate the library is “finished”, the core libraries are all being bumped to this for the 0.9 compiler release so as to use semver more correctly.
-
-## [v1.0.0-rc.2](https://github.com/purescript/purescript-psci-support/releases/tag/v1.0.0-rc.2) - 2016-05-23
-
-Update dependencies.
-
-## [v1.0.0-rc.1](https://github.com/purescript/purescript-psci-support/releases/tag/v1.0.0-rc.1) - 2016-05-14
-
-Initial versioned release
-
+- Updated dependencies
+- Initial versioned release
