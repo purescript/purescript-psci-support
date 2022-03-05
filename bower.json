@@ -16,8 +16,8 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-console": "^5.0.0",
-    "purescript-effect": "^3.0.0",
-    "purescript-prelude": "^5.0.0"
+    "purescript-console": "working-group-purescript-es/purescript-console#es-modules-libraries",
+    "purescript-effect": "working-group-purescript-es/purescript-effect#es-modules-libraries",
+    "purescript-prelude": "working-group-purescript-es/purescript-prelude#es-modules-libraries"
   }
 }
