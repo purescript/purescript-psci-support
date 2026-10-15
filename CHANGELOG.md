@@ -11,6 +11,7 @@ Other improvements:
 ## [v6.0.0](https://github.com/purescript/purescript-psci-support/releases/tag/v6.0.0) - 2022-04-27
 
 Breaking changes:
+
 - Update project and deps to PureScript v0.15.0 (#25 by @JordanMartinez)
 
 New features:
@@ -22,14 +23,17 @@ Other improvements:
 ## [v5.0.0](https://github.com/purescript/purescript-psci-support/releases/tag/v5.0.0) - 2021-02-26
 
 Breaking changes:
+
 - Added support for PureScript 0.14 and dropped support for all previous versions (#20)
 
 New features:
+
 - Add instance for `Eval (Effect Unit)` to avoid printing `unit` after running an `Effect Unit` in the repl (#15)
 
 Bugfixes:
 
 Other improvements:
+
 - Migrated CI to GitHub Actions and updated installation instructions to use Spago (#21)
 - Added a changelog and pull request template (#22, #23)
 

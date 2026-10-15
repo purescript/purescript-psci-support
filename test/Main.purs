@@ -1,9 +1,9 @@
 module Test.Main where
 
-import Prelude (pure, unit, Unit)
-import PSCI.Support (eval)
 import Effect (Effect)
 import Effect.Console (logShow)
+import PSCI.Support (eval)
+import Prelude (Unit, pure, unit)
 
 egEvalShow :: Effect Unit
 egEvalShow = eval 42
