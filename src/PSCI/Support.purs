@@ -18,10 +18,8 @@ class Eval a where
 
 instance evalEffectUnit :: Eval (Effect Unit) where
   eval = identity
-else
-instance evalEffect :: Eval a => Eval (Effect a) where
+else instance evalEffect :: Eval a => Eval (Effect a) where
   eval x = x >>= eval
-else
-instance evalShow :: Show a => Eval a where
+else instance evalShow :: Show a => Eval a where
   eval = logShow
 
